@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout
   title="Portfolio von Christopher"
-  class="text-white bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r"
+  class="flex flex-col min-h-screen text-white bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-900 to-gray-600 bg-gradient-to-r"
 >
   <header class="container mx-auto px-6 py-3 absolute inset-0">
     <img
@@ -16,10 +16,14 @@ import Layout from "../layouts/Layout.astro";
     />
   </header>
 
-  <main class="container flex items-center justify-center mx-auto px-6 min-h-screen">
+  <main class="container flex-1 flex items-center justify-center mx-auto px-6 prose lg:prose-xl prose-zinc prose-invert">
     <div class="text-center">
       <h1>Hi, ich heiße Christopher</h1>
       <h2>Ich bin Web Entwickler</h2>
-    </div>
+    </div> 
   </main>
+
+  <footer class="container mx-auto px-6 py-3 text-gray-400 font-bold">
+    <p>&copy; 2023 Christopher</p>
+  </footer>
 </Layout>
